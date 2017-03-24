@@ -1,0 +1,79 @@
+body {
+  font-family: 'Orbitron', sans-serif;
+  background-color: #a458be;
+  color: #fff;
+  position: relative;
+}
+
+
+h2, h4{
+  text-align:center;
+
+}
+
+p{
+  color: black;
+  margin-top: 10px;
+
+}
+
+#quoteBox {
+  background-color: #fff;
+  height: 200px;
+  margin-top: 20px;
+  border-radius: 4px;
+}
+
+#quoteBox > p {
+  text-align: center;
+  padding: 20px 10px 0 10px;
+  font-size: 25px;
+
+
+}
+
+p > #author {
+font-style: italic;
+font-size: 15px;
+}
+
+#newQuote{
+  background-color: #a458be;
+  position: absolute;
+  top: 150px;
+}
+
+#tweet {
+  background-color: #a458be;
+  position: absolute;
+  top: 150px;
+  right: 30px;
+}
+
+#newQuote {
+  margin-left: 200px;
+}
+
+#tweet {
+  margin-right: 200px;
+}
+
+@media only screen and (max-width: 768px) {
+    #newQuote {
+        margin-left:50px;
+    }
+    #tweet{
+      margin-right: 50px;
+    }
+    #quoteBox > p {
+      font-size: 15px;
+    }
+    p > #author {
+    font-size: 12px;
+    }
+    #newQuote{
+      margin-left: 15px;
+    }
+    #tweet {
+    margin-right: 15px;
+}
