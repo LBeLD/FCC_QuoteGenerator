@@ -30,10 +30,11 @@ $(document).ready(function(){
   getNewQuote();
   //random color picker function
   function colorChanger (){
-    var colors = ['#C63D0F','#3B3738','#FFE658','#7E8F7C','#005A31','#A8CD1B','#CBE32D','#F3FAB6','#000000','#2B2B2B','#DE1B1B','#E9E581','#4A96AD','#E44424','#67BCDB'];
+    var colors = ['#161718','#064507','#025ba1','#d52d2d','#c8bc1b','#7c1e78','#046f6f','#d0990b','#3c303e','#303c70','#9a2525','#4e3582','#416b44','#725777'];
     var randomPicker = Math.floor(Math.random()*colors.length);
     $('body').css('background-color', colors[randomPicker]);
-    $('button').css('background-color', colors[randomPicker]);
+    $('#newQuote').css('color', colors[randomPicker]);
+    $('#tweet').css('color', colors[randomPicker]);
   }
 //add button event New Quote Button handler
 $('#newQuote').on('click', getNewQuote);

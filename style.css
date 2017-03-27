@@ -1,6 +1,6 @@
 body {
   font-family: 'Orbitron', sans-serif;
-  background-color: #a458be;
+  background-color: #481a65;
   color: #fff;
   position: relative;
 }
@@ -19,7 +19,8 @@ p{
 
 #quoteBox {
   background-color: #fff;
-  height: 200px;
+  min-height: 200px;
+  max-height: 400px;
   margin-top: 20px;
   border-radius: 4px;
 }
@@ -28,8 +29,6 @@ p{
   text-align: center;
   padding: 20px 10px 0 10px;
   font-size: 25px;
-
-
 }
 
 p > #author {
@@ -37,43 +36,32 @@ font-style: italic;
 font-size: 15px;
 }
 
-#newQuote{
-  background-color: #a458be;
-  position: absolute;
-  top: 150px;
+#newQuote,#tweet{
+  color: #481a65;
+  background-color: #fff;
+  margin: 20px 40px;
 }
 
-#tweet {
-  background-color: #a458be;
-  position: absolute;
-  top: 150px;
-  right: 30px;
+div .buttons{
+  text-align: center;
 }
 
-#newQuote {
-  margin-left: 200px;
+footer a {
+  text-decoration: none;
+  color:#9f9f9f;
 }
 
-#tweet {
-  margin-right: 200px;
+footer p{
+  color: #fff;
 }
 
 @media only screen and (max-width: 768px) {
-    #newQuote {
-        margin-left:50px;
-    }
-    #tweet{
-      margin-right: 50px;
-    }
+
     #quoteBox > p {
       font-size: 15px;
     }
     p > #author {
     font-size: 12px;
     }
-    #newQuote{
-      margin-left: 15px;
-    }
-    #tweet {
-    margin-right: 15px;
+
 }
